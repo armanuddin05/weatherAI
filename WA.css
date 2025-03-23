@@ -1,15 +1,93 @@
-.title {
-    text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00cec9;
+}
+
+
 .things {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .inp {
-    height: 42px;
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
 }
 
+button {
+  background-color: #00cec9;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007b7a;
+}
+
+
 .results {
-    margin-left: 200px;
+  text-align: center;
+}
+
+#tempInfo p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#weatherInfo p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.hourly-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 1.2rem;
 }
